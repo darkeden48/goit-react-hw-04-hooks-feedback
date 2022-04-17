@@ -1,0 +1,10 @@
+.element {
+  border: 5x;
+  color: coral;
+}
+ul li:first-child .button {
+  background-color: darkcyan;
+}
+ul li:last-child .button {
+  background-color: rgb(248, 60, 3);
+}
