@@ -1,7 +1,16 @@
 import PropTypes from "prop-types";
 import React from "react";
 import s from "./Statistics.module.css";
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+
+interface StatProps{
+  good: number;
+  neutral: number;
+  bad: number;
+  total: number;
+  positivePercentage: number;
+}
+
+const Statistics = ({ good, neutral, bad, total, positivePercentage }:StatProps) => {
   return (
     <div>
       <ul>

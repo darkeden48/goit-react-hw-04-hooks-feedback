@@ -2,7 +2,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import f from "./Feedback.module.css";
-export default function Feedback({ options, onLeaveFeedback }) {
+
+interface FeedProps{
+  options:string[]; 
+  onLeaveFeedback:(option:string)=>void;
+}
+
+export default function Feedback({ options, onLeaveFeedback }:FeedProps) {
   return (
     <ul>
       {options.map((option) => (
